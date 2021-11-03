@@ -7,14 +7,12 @@
  */
 void _puts2(char *str)
 {
-        ssize_t num, len;
-
-        num = _strlen(str);
-        len = write(STDERR_FILENO, str, num);
-        if (len != num)
-        {
-                perror("Fatal Error");
-                exit(1);
-        }
-
+ssize_t num, len;
+num = _strlen(str);
+len = write(STDERR_FILENO, str, num);
+if (len != num)
+{
+perror("Fatal Error");
+exit(1);
+}
 }

@@ -8,12 +8,12 @@
  */
 unsigned int check_match(char c, const char *str)
 {
-        unsigned int i;
+unsigned int i;
 
-        for (i = 0; str[i] != '\0'; i++)
-        {
-                if (c == str[i])
-                        return (1);
-        }
-        return (0);
+for (i = 0; str[i] != '\0'; i++)
+{
+if (c == str[i])
+return (1);
+}
+return (0);
 }
