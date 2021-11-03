@@ -1,4 +1,5 @@
 #include "main.h"
+unsigned int sig_flag;
 /**
  * sig_handler - handles ^C signal interupt
  * @uuv: unused variable (required for signal function prototype)
